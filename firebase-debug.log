@@ -1,0 +1,136 @@
+[debug] [2024-05-04T19:06:14.477Z] ----------------------------------------------------------------------
+[debug] [2024-05-04T19:06:14.478Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting,functions
+[debug] [2024-05-04T19:06:14.478Z] CLI Version:   11.16.0
+[debug] [2024-05-04T19:06:14.478Z] Platform:      darwin
+[debug] [2024-05-04T19:06:14.478Z] Node Version:  v18.13.0
+[debug] [2024-05-04T19:06:14.484Z] Time:          Sat May 04 2024 22:06:14 GMT+0300 (GMT+03:00)
+[debug] [2024-05-04T19:06:14.484Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-04T19:06:14.549Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-04T19:06:14.549Z] > authorizing via signed-in user (ahmadmalak1997@gmail.com)
+[debug] [2024-05-04T19:06:14.549Z] [iam] checking project analytical-chatbot for permissions ["firebase.projects.get"]
+[debug] [2024-05-04T19:06:14.550Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions [none]
+[debug] [2024-05-04T19:06:14.550Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions x-goog-quota-user=projects/analytical-chatbot
+[debug] [2024-05-04T19:06:14.550Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:06:15.143Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions 200
+[debug] [2024-05-04T19:06:15.144Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:06:15.144Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot [none]
+[debug] [2024-05-04T19:06:15.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot 200
+[debug] [2024-05-04T19:06:15.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot {"projectId":"analytical-chatbot","projectNumber":"761201808558","displayName":"Analytical chatbot","name":"projects/analytical-chatbot","resources":{"hostingSite":"analytical-chatbot","realtimeDatabaseInstance":"analytical-chatbot-default-rtdb","storageBucket":"analytical-chatbot.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_96ef0348-da3d-44cc-b459-e3bbec174ee0"}
+[debug] [2024-05-04T19:06:15.606Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/analytical-chatbot/sites 
+[debug] [2024-05-04T19:06:15.964Z] Error: Cannot find module '/Users/ahmadmalak/Downloads/ask_pdf-main-3/functions/package.json'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1039:15)
+    at Module._load (node:internal/modules/cjs/loader:885:27)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at FunctionsEmulator.getNodeBinary (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:622:21)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:187:39)
+    at EmulatorRegistry.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/registry.js:18:24)
+    at FunctionsServer.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:54:44)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:31:36
+    at Array.map (<anonymous>)
+    at serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:30:35)
+    at Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/serve.js:47:34)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:216:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-04T19:06:54.649Z] ----------------------------------------------------------------------
+[debug] [2024-05-04T19:06:54.650Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting,functions
+[debug] [2024-05-04T19:06:54.650Z] CLI Version:   11.16.0
+[debug] [2024-05-04T19:06:54.650Z] Platform:      darwin
+[debug] [2024-05-04T19:06:54.651Z] Node Version:  v18.13.0
+[debug] [2024-05-04T19:06:54.651Z] Time:          Sat May 04 2024 22:06:54 GMT+0300 (GMT+03:00)
+[debug] [2024-05-04T19:06:54.651Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-04T19:06:54.711Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-04T19:06:54.711Z] > authorizing via signed-in user (ahmadmalak1997@gmail.com)
+[debug] [2024-05-04T19:06:54.711Z] [iam] checking project analytical-chatbot for permissions ["firebase.projects.get"]
+[debug] [2024-05-04T19:06:54.712Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions [none]
+[debug] [2024-05-04T19:06:54.712Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions x-goog-quota-user=projects/analytical-chatbot
+[debug] [2024-05-04T19:06:54.712Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:06:55.857Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions 200
+[debug] [2024-05-04T19:06:55.857Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:06:55.858Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot [none]
+[debug] [2024-05-04T19:06:56.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot 200
+[debug] [2024-05-04T19:06:56.483Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot {"projectId":"analytical-chatbot","projectNumber":"761201808558","displayName":"Analytical chatbot","name":"projects/analytical-chatbot","resources":{"hostingSite":"analytical-chatbot","realtimeDatabaseInstance":"analytical-chatbot-default-rtdb","storageBucket":"analytical-chatbot.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_96ef0348-da3d-44cc-b459-e3bbec174ee0"}
+[debug] [2024-05-04T19:06:56.487Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/analytical-chatbot/sites 
+[debug] [2024-05-04T19:06:56.815Z] Error: Cannot find module '/Users/ahmadmalak/Downloads/ask_pdf-main-3/functions/package.json'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1039:15)
+    at Module._load (node:internal/modules/cjs/loader:885:27)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at FunctionsEmulator.getNodeBinary (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:622:21)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:187:39)
+    at EmulatorRegistry.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/registry.js:18:24)
+    at FunctionsServer.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:54:44)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:31:36
+    at Array.map (<anonymous>)
+    at serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:30:35)
+    at Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/serve.js:47:34)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:216:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-04T19:19:16.720Z] ----------------------------------------------------------------------
+[debug] [2024-05-04T19:19:16.721Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting,functions
+[debug] [2024-05-04T19:19:16.721Z] CLI Version:   11.16.0
+[debug] [2024-05-04T19:19:16.721Z] Platform:      darwin
+[debug] [2024-05-04T19:19:16.721Z] Node Version:  v18.13.0
+[debug] [2024-05-04T19:19:16.727Z] Time:          Sat May 04 2024 22:19:16 GMT+0300 (GMT+03:00)
+[debug] [2024-05-04T19:19:16.728Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-04T19:19:16.783Z] Field ".emulators.firestore.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2024-05-04T19:19:16.786Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-04T19:19:16.786Z] > authorizing via signed-in user (ahmadmalak1997@gmail.com)
+[debug] [2024-05-04T19:19:16.786Z] [iam] checking project analytical-chatbot for permissions ["firebase.projects.get"]
+[debug] [2024-05-04T19:19:16.787Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions [none]
+[debug] [2024-05-04T19:19:16.787Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions x-goog-quota-user=projects/analytical-chatbot
+[debug] [2024-05-04T19:19:16.787Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:19:17.336Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions 200
+[debug] [2024-05-04T19:19:17.336Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/analytical-chatbot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-04T19:19:17.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot [none]
+[debug] [2024-05-04T19:19:17.971Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot 200
+[debug] [2024-05-04T19:19:17.971Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/analytical-chatbot {"projectId":"analytical-chatbot","projectNumber":"761201808558","displayName":"Analytical chatbot","name":"projects/analytical-chatbot","resources":{"hostingSite":"analytical-chatbot","realtimeDatabaseInstance":"analytical-chatbot-default-rtdb","storageBucket":"analytical-chatbot.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_96ef0348-da3d-44cc-b459-e3bbec174ee0"}
+[debug] [2024-05-04T19:19:17.974Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/analytical-chatbot/sites 
+[debug] [2024-05-04T19:19:18.334Z] Error: Cannot find module '/Users/ahmadmalak/Downloads/ask_pdf-main-3/functions/package.json'
+Require stack:
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /usr/local/lib/node_modules/firebase-tools/lib/commands/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1039:15)
+    at Module._load (node:internal/modules/cjs/loader:885:27)
+    at Module.require (node:internal/modules/cjs/loader:1105:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at FunctionsEmulator.getNodeBinary (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:622:21)
+    at FunctionsEmulator.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulator.js:187:39)
+    at EmulatorRegistry.start (/usr/local/lib/node_modules/firebase-tools/lib/emulator/registry.js:18:24)
+    at FunctionsServer.start (/usr/local/lib/node_modules/firebase-tools/lib/serve/functions.js:54:44)
+    at /usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:31:36
+    at Array.map (<anonymous>)
+    at serve (/usr/local/lib/node_modules/firebase-tools/lib/serve/index.js:30:35)
+    at Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/serve.js:47:34)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:216:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
