@@ -10,10 +10,10 @@ import 'package:langchain_pinecone/langchain_pinecone.dart';
 import 'package:pinecone/pinecone.dart';
 
 final langchainServiceProvider = Provider<LangChainService>((ref) {
-  final pineConeApiKey = "89ffb7df-d3ad-4903-8a3e-cb0912fb4d60";
-  final environment = "gcp-starter";
+  final pineConeApiKey = "";
+  final environment = "";
   final openAIApiKey =
-      "sk-proj-u9sq68V0HpwPgd2HbLvcT3BlbkFJj9p7FPKarqVIWlBoWqI7";
+      "";
 
   final pineconeClient = PineconeClient(
     apiKey: pineConeApiKey,
